@@ -5,6 +5,31 @@ Dictionary = {"key": value, "key": value} = mutable
 Range = range(10)
 Set = {} = mutable
 String = "" = immutable
+
+List operations
+.append() = add an element at the end
+.insert() = add an element at a specific position
+.remove() = remove an element
+.pop() = remove an element at specific position
+.clear() = remove all elements
+.sort() = sort elements
+.reverse() = reverse elements
+.copy() = copy elements
+
+[1:3] = slicing
+elements from 1 up to 3 (3rd index NOT included)
+
+[1: ]
+elements from 1 to end
+
+[: 3]
+elements from start to 3 (3rd index NOT included)
+
+[:: -1]
+reverse element
+
+[1::-1]
+reverse elements from 0 to 1
 """
 list1 = [1, 2, 3, 4]
 
@@ -70,7 +95,7 @@ fruits = ['apple', 'cherry', 'banana']
 fruits += ['kiwi']
 
 print(fruits)
-print(fruits[1:3])
+print(fruits[1::-1])
 fruits.sort()
 print(fruits)
 

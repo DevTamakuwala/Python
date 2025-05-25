@@ -1,3 +1,19 @@
+"""
+name = public
+_name = protected
+__name = private
+
+
+class Parent:
+    def greet(self):
+        print ("Hello from Parent")
+
+class Child (Parent):
+    def greet(self):
+        print ("Hello from Child")
+"""
+
+
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -35,7 +51,7 @@ class Student:
 
 s = Student()
 print(s.name)           # Accessible
-print(s._age)           # Accessible (not recommended)
+# print(s._age)           # Accessible (not recommended)
 # print(s.__marks)      # Error
 print(s.get_marks())    # Correct way to access private data
 
